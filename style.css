@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(./assetc/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+  }
+/* singup style start */
+
+.singup-box{
+    
+    width: 350px;
+    height: 610px;
+    margin: auto;
+    background-color: black;
+    border-radius: 3px;
+    margin-top: 5px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+h1{
+
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 8px;
+
+}
+
+form select{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 15px;
+    border-radius: 8px;
+    color:black;
+
+}
+
+.singup-btn{
+    width: 100%;
+height: 35px;
+margin-top: 15px;
+border: none;
+background-color:rgb(150, 86, 3);
+color: white;
+font-size: 15px;
+
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    color: white;
+
+}
+
+/* singup style end */
+
+
+
+
+.LOGIN-box{
+    
+    width: 360px;
+    height: 520px;
+    margin: auto;
+    background-color: black;
+    padding-top: 40px;
+    margin-top: 50px;
+opacity: 0.6;
+border-radius: 5px;
+}    
+
+
+/* spinner */
+
+.spinner-circle {
+    display: none;
+}
+
+.spinner-dis-inline-block {
+    display: inline-block !important;
+    width: 50px;
+    color: #df5e13 !important;
+    position: fixed;
+    top: 50%;
+    height: 50px;
+    left: 50%;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: .75s linear infinite spinner-grow;
+    animation: .75s linear infinite spinner-grow;
+}
+
+.spinner-dis-none {
+    display: none !important;
+}

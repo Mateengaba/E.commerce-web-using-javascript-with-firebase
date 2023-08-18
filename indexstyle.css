@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.parent {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+background-color: black;}
+
+.info {
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-size: small;
+}
+
+.langTag {
+    padding: 0 8px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    color: white;
+}
+
+.langTag:hover{
+
+    color: rgb(126, 179, 60);
+      transition: all 0.3s ease;
+      cursor: pointer;
+}
+
+
+/* navbar */
+
+
+.navbar{
+    height: 80px;
+    background-color:rgba(241, 235, 235, 0.897);
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 0px ;
+    justify-content: space-around;
+box-shadow: 30px;
+    
+    
+    }
+    .navbar .menu-btn i{
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-top: 20px;    
+    }
+    
+    
+    .navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    }
+    
+    .rightnav{
+        padding-left: 100px;
+    }
+    .btn{
+        border: 1px solid rgb(10, 10, 10);
+        border-radius: 5px;
+        outline: none;
+        width: 90px;
+        height: 33px;
+        justify-content: center;
+        align-items: center;
+       color: black;
+       
+    }
+    
+    .navbar ul li a:hover{
+      color:rgb(177, 102, 32);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color:white;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          background-color: rgb(177, 102, 32);
+      }
+    
+    #click{
+    
+    display: none;
+    }
+    
+    
+      @media (max-width:940px){
+    .navbar ul{
+        position:absolute;
+        top: 80px;
+        left: -100%;
+        height: 200vh;
+        width: 100%;
+        display: block;
+        background-color: #396afc;
+      text-align: center;
+      border: 3px solid white;
+
+      transition: all 0.3s ease;
+    z-index: 1;
+    
+    }
+    
+    #click:checked ~ ul{
+        left:0%;
+    
+    }
+    .navbar ul li{
+        margin: 40px 0;
+        text-align: center;
+    
+    }
+    .navbar ul li a{
+        font-size: 20px;
+        border-bottom: 2px solid rgb(90, 170, 223);
+    
+    }
+    .navbar ul li a:hover{
+        color: rgb(197, 196, 196);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .rightnav{
+        padding: 0%;
+    }
+    .navbar .menu-btn i{
+        display: block;
+    }
+      }
+    
+      @media (max-width:1200px){
+       .navbar {width:auto;
+        background-color: #396afc;
+    }
+    }
+    
+    /* End navbar */
+    
+
+
+    
+ /* <!-- round box 3contener start --> */
+
+
+ .mainroundbox{
+    display: flex;
+    width: 95%;
+    height: 150px;
+    background-color: white;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+ }
+
+.roundbox{
+
+    margin: 8px 3px 5px 8px;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 105px;
+    height: 105px;
+    border-radius: 60px;
+    
+}
+.imgroun{
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    filter: brightness(70%);
+
+}
+
+.imgroun:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    filter: brightness(90%);
+    border: 2px solid white;
+
+}
+
+h6{
+    font-weight: bold;
+    padding-top: 10px;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+@media (max-width:760px){
+    .mainroundbox {width:100%;
+        height: 400px;
+     background-color: white;
+ }
+
+ }
+
+    
+
+ /*  Deals! start */
+
+
+.Amazing{
+    width: 100%;
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Amazing p{
+    color: rgb(67, 173, 67);
+    font-size: large;
+    padding-top: 30px;
+}
+
+.Amazing h1{
+    color:black;
+  
+    padding-top: 10px;
+}
+
+
+ /*  Deals! End */
